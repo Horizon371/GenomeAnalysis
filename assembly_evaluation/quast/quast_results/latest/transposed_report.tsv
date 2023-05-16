@@ -1,0 +1,3 @@
+Assembly	# contigs (>= 0 bp)	# contigs (>= 1000 bp)	# contigs (>= 5000 bp)	# contigs (>= 10000 bp)	# contigs (>= 25000 bp)	# contigs (>= 50000 bp)	Total length (>= 0 bp)	Total length (>= 1000 bp)	Total length (>= 5000 bp)	Total length (>= 10000 bp)	Total length (>= 25000 bp)	Total length (>= 50000 bp)	# contigs	Largest contig	Total length	GC (%)	N50	N75	L50	L75	# N's per 100 kbp
+assembled_canu.contigs	9	9	9	9	4	2	3135573	3135573	3135573	3135573	3048456	2979568	9	2763567	3135573	37.79	2763567	2763567	1	1	0.00
+scaffolds	942	107	90	75	39	19	3106612	3060262	3013186	2907304	2353951	1682891	109	148503	3061871	37.66	58161	26323	17	37	284.30

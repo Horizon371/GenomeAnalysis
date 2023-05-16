@@ -1,0 +1,11 @@
+
+
+Building a new DB, current time: 04/26/2023 16:15:49
+New DB name:   /domus/h1/cristp/GenomeAnalysis/scripts/blast/reference_db
+New DB title:  /home/cristp/GenomeAnalysis/other_input/GCF_009734005.1_ASM973400v2_genomic.fna
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 3000000000B
+Adding sequences from FASTA; added 2 sequences in 0.214353 seconds.
+
+

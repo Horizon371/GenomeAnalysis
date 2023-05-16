@@ -1,0 +1,73 @@
+/sw/bioinfo/quast/5.0.2/snowy/bin/quast.py /home/cristp/GenomeAnalysis/results/assembled/canu/assembled_canu.contigs.fasta /home/cristp/GenomeAnalysis/results/assembled/spades/scaffolds.fasta
+
+Version: 5.0.2
+
+System information:
+  OS: Linux-3.10.0-1160.88.1.el7.x86_64-x86_64-with-centos-7.9.2009-Core (linux_64)
+  Python version: 3.7.2
+  CPUs number: 16
+
+Started: 2023-04-25 16:32:15
+
+Logging to /domus/h1/cristp/GenomeAnalysis/scripts/assembly_evaluation/quast/quast_results/results_2023_04_25_16_32_15/quast.log
+NOTICE: Maximum number of threads is set to 4 (use --threads option to set it manually)
+
+CWD: /domus/h1/cristp/GenomeAnalysis/scripts/assembly_evaluation/quast
+Main parameters: 
+  MODE: default, threads: 4, minimum contig length: 500, minimum alignment length: 65, \
+  ambiguity: one, threshold for extensive misassembly size: 1000
+
+Contigs:
+  Pre-processing...
+  1  /home/cristp/GenomeAnalysis/results/assembled/canu/assembled_canu.contigs.fasta ==> assembled_canu.contigs
+  2  /home/cristp/GenomeAnalysis/results/assembled/spades/scaffolds.fasta ==> scaffolds
+
+2023-04-25 16:32:17
+Running Basic statistics processor...
+  Contig files: 
+    1  assembled_canu.contigs
+    2  scaffolds
+  Calculating N50 and L50...
+    1  assembled_canu.contigs, N50 = 2763567, L50 = 1, Total length = 3135573, GC % = 37.79, # N's per 100 kbp =  0.00
+    2  scaffolds, N50 = 58161, L50 = 17, Total length = 3061871, GC % = 37.66, # N's per 100 kbp =  284.30
+  Drawing Nx plot...
+    saved to /domus/h1/cristp/GenomeAnalysis/scripts/assembly_evaluation/quast/quast_results/results_2023_04_25_16_32_15/basic_stats/Nx_plot.pdf
+  Drawing cumulative plot...
+    saved to /domus/h1/cristp/GenomeAnalysis/scripts/assembly_evaluation/quast/quast_results/results_2023_04_25_16_32_15/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /domus/h1/cristp/GenomeAnalysis/scripts/assembly_evaluation/quast/quast_results/results_2023_04_25_16_32_15/basic_stats/GC_content_plot.pdf
+  Drawing assembled_canu.contigs GC content plot...
+    saved to /domus/h1/cristp/GenomeAnalysis/scripts/assembly_evaluation/quast/quast_results/results_2023_04_25_16_32_15/basic_stats/assembled_canu.contigs_GC_content_plot.pdf
+  Drawing scaffolds GC content plot...
+    saved to /domus/h1/cristp/GenomeAnalysis/scripts/assembly_evaluation/quast/quast_results/results_2023_04_25_16_32_15/basic_stats/scaffolds_GC_content_plot.pdf
+  Drawing Coverage histogram (bin size: 20x)...
+    saved to /domus/h1/cristp/GenomeAnalysis/scripts/assembly_evaluation/quast/quast_results/results_2023_04_25_16_32_15/basic_stats/coverage_histogram.pdf
+  Drawing scaffolds coverage histogram (bin size: 20x)...
+    saved to /domus/h1/cristp/GenomeAnalysis/scripts/assembly_evaluation/quast/quast_results/results_2023_04_25_16_32_15/basic_stats/scaffolds_coverage_histogram.pdf
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2023-04-25 16:32:20
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating Icarus viewers...
+  2 of 2: Creating PDF with all tables and plots...
+Done
+
+2023-04-25 16:32:21
+RESULTS:
+  Text versions of total report are saved to /domus/h1/cristp/GenomeAnalysis/scripts/assembly_evaluation/quast/quast_results/results_2023_04_25_16_32_15/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /domus/h1/cristp/GenomeAnalysis/scripts/assembly_evaluation/quast/quast_results/results_2023_04_25_16_32_15/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /domus/h1/cristp/GenomeAnalysis/scripts/assembly_evaluation/quast/quast_results/results_2023_04_25_16_32_15/report.html
+  PDF version (tables and plots) is saved to /domus/h1/cristp/GenomeAnalysis/scripts/assembly_evaluation/quast/quast_results/results_2023_04_25_16_32_15/report.pdf
+  Icarus (contig browser) is saved to /domus/h1/cristp/GenomeAnalysis/scripts/assembly_evaluation/quast/quast_results/results_2023_04_25_16_32_15/icarus.html
+  Log is saved to /domus/h1/cristp/GenomeAnalysis/scripts/assembly_evaluation/quast/quast_results/results_2023_04_25_16_32_15/quast.log
+
+Finished: 2023-04-25 16:32:21
+Elapsed time: 0:00:06.472338
+NOTICEs: 2; WARNINGs: 0; non-fatal ERRORs: 0
+
+Thank you for using QUAST!
+/var/spool/slurmd/job7731584/slurm_script: line 19: -1: command not found
+/var/spool/slurmd/job7731584/slurm_script: line 21: -o: command not found

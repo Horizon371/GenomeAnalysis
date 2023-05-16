@@ -1,0 +1,24 @@
+All statistics are based on contigs of size >= 500 bp, unless otherwise noted (e.g., "# contigs (>= 0 bp)" and "Total length (>= 0 bp)" include all contigs).
+
+Assembly                    assembled_canu.contigs  scaffolds
+# contigs (>= 0 bp)         9                       942      
+# contigs (>= 1000 bp)      9                       107      
+# contigs (>= 5000 bp)      9                       90       
+# contigs (>= 10000 bp)     9                       75       
+# contigs (>= 25000 bp)     4                       39       
+# contigs (>= 50000 bp)     2                       19       
+Total length (>= 0 bp)      3135573                 3106612  
+Total length (>= 1000 bp)   3135573                 3060262  
+Total length (>= 5000 bp)   3135573                 3013186  
+Total length (>= 10000 bp)  3135573                 2907304  
+Total length (>= 25000 bp)  3048456                 2353951  
+Total length (>= 50000 bp)  2979568                 1682891  
+# contigs                   9                       109      
+Largest contig              2763567                 148503   
+Total length                3135573                 3061871  
+GC (%)                      37.79                   37.66    
+N50                         2763567                 58161    
+N75                         2763567                 26323    
+L50                         1                       17       
+L75                         1                       37       
+# N's per 100 kbp           0.00                    284.30   

@@ -1,0 +1,125 @@
+/sw/bioinfo/quast/5.0.2/snowy/bin/quast.py /home/cristp/GenomeAnalysis/results/assembled/canu/assembled_canu.contigs.fasta /home/cristp/GenomeAnalysis/results/assembled/spades/scaffolds.fasta -r /home/cristp/GenomeAnalysis/other_input/GCF_009734005.1_ASM973400v2_genomic.fna.gz -o /home/cristp/GenomeAnalysis/results/assembly_quality/quast
+
+Version: 5.0.2
+
+System information:
+  OS: Linux-3.10.0-1160.88.1.el7.x86_64-x86_64-with-centos-7.9.2009-Core (linux_64)
+  Python version: 3.7.2
+  CPUs number: 16
+
+Started: 2023-04-25 16:36:51
+
+Logging to /home/cristp/GenomeAnalysis/results/assembly_quality/quast/quast.log
+NOTICE: Maximum number of threads is set to 4 (use --threads option to set it manually)
+
+CWD: /domus/h1/cristp/GenomeAnalysis/scripts/assembly_evaluation/quast
+Main parameters: 
+  MODE: default, threads: 4, minimum contig length: 500, minimum alignment length: 65, \
+  ambiguity: one, threshold for extensive misassembly size: 1000
+
+Reference:
+  /home/cristp/GenomeAnalysis/other_input/GCF_009734005.1_ASM973400v2_genomic.fna.gz ==> GCF_009734005.1_ASM973400v2_genomic
+
+Contigs:
+  Pre-processing...
+  1  /home/cristp/GenomeAnalysis/results/assembled/canu/assembled_canu.contigs.fasta ==> assembled_canu.contigs
+  2  /home/cristp/GenomeAnalysis/results/assembled/spades/scaffolds.fasta ==> scaffolds
+
+2023-04-25 16:36:53
+Running Basic statistics processor...
+  Reference genome:
+    GCF_009734005.1_ASM973400v2_genomic.fna, length = 2919198, num fragments = 2, GC % = 37.88
+  Contig files: 
+    1  assembled_canu.contigs
+    2  scaffolds
+  Calculating N50 and L50...
+    1  assembled_canu.contigs, N50 = 2763567, L50 = 1, Total length = 3135573, GC % = 37.79, # N's per 100 kbp =  0.00
+    2  scaffolds, N50 = 58161, L50 = 17, Total length = 3061871, GC % = 37.66, # N's per 100 kbp =  284.30
+  Drawing Nx plot...
+    saved to /home/cristp/GenomeAnalysis/results/assembly_quality/quast/basic_stats/Nx_plot.pdf
+  Drawing NGx plot...
+    saved to /home/cristp/GenomeAnalysis/results/assembly_quality/quast/basic_stats/NGx_plot.pdf
+  Drawing cumulative plot...
+    saved to /home/cristp/GenomeAnalysis/results/assembly_quality/quast/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /home/cristp/GenomeAnalysis/results/assembly_quality/quast/basic_stats/GC_content_plot.pdf
+  Drawing assembled_canu.contigs GC content plot...
+    saved to /home/cristp/GenomeAnalysis/results/assembly_quality/quast/basic_stats/assembled_canu.contigs_GC_content_plot.pdf
+  Drawing scaffolds GC content plot...
+    saved to /home/cristp/GenomeAnalysis/results/assembly_quality/quast/basic_stats/scaffolds_GC_content_plot.pdf
+  Drawing Coverage histogram (bin size: 20x)...
+    saved to /home/cristp/GenomeAnalysis/results/assembly_quality/quast/basic_stats/coverage_histogram.pdf
+  Drawing scaffolds coverage histogram (bin size: 20x)...
+    saved to /home/cristp/GenomeAnalysis/results/assembly_quality/quast/basic_stats/scaffolds_coverage_histogram.pdf
+Done.
+
+2023-04-25 16:36:56
+Running Contig analyzer...
+  1  assembled_canu.contigs
+  2  scaffolds
+  1  Logging to files /home/cristp/GenomeAnalysis/results/assembly_quality/quast/contigs_reports/contigs_report_assembled_canu-contigs.stdout and contigs_report_assembled_canu-contigs.stderr...
+  2  Logging to files /home/cristp/GenomeAnalysis/results/assembly_quality/quast/contigs_reports/contigs_report_scaffolds.stdout and contigs_report_scaffolds.stderr...
+  1  Aligning contigs to the reference
+  2  Aligning contigs to the reference
+  2  Analysis is finished.
+  1  Analysis is finished.
+  Creating total report...
+    saved to /home/cristp/GenomeAnalysis/results/assembly_quality/quast/contigs_reports/misassemblies_report.txt, misassemblies_report.tsv, and misassemblies_report.tex
+  Transposed version of total report...
+    saved to /home/cristp/GenomeAnalysis/results/assembly_quality/quast/contigs_reports/transposed_report_misassemblies.txt, transposed_report_misassemblies.tsv, and transposed_report_misassemblies.tex
+  Creating total report...
+    saved to /home/cristp/GenomeAnalysis/results/assembly_quality/quast/contigs_reports/unaligned_report.txt, unaligned_report.tsv, and unaligned_report.tex
+  Drawing misassemblies by types plot...
+    saved to /home/cristp/GenomeAnalysis/results/assembly_quality/quast/contigs_reports/misassemblies_plot.pdf
+  Drawing misassemblies FRCurve plot...
+    saved to /home/cristp/GenomeAnalysis/results/assembly_quality/quast/contigs_reports/misassemblies_frcurve_plot.pdf
+Done.
+
+2023-04-25 16:37:00
+Running NA-NGA calculation...
+  1  assembled_canu.contigs, Largest alignment = 137654, NA50 = 24552, NGA50 = 29113, LA50 = 31, LGA50 = 27
+  2  scaffolds, Largest alignment = 101341, NA50 = 14608, NGA50 = 15792, LA50 = 54, LGA50 = 50
+  Drawing cumulative plot...
+    saved to /home/cristp/GenomeAnalysis/results/assembly_quality/quast/aligned_stats/cumulative_plot.pdf
+  Drawing NAx plot...
+    saved to /home/cristp/GenomeAnalysis/results/assembly_quality/quast/aligned_stats/NAx_plot.pdf
+  Drawing NGAx plot...
+    saved to /home/cristp/GenomeAnalysis/results/assembly_quality/quast/aligned_stats/NGAx_plot.pdf
+Done.
+
+2023-04-25 16:37:01
+Running Genome analyzer...
+  NOTICE: No file with genomic features were provided. Use the --features option if you want to specify it.
+
+  NOTICE: No file with operons were provided. Use the -O option if you want to specify it.
+  1  assembled_canu.contigs
+  2  scaffolds
+  2  Analysis is finished.
+  1  Analysis is finished.
+  Drawing Genome fraction, % histogram...
+    saved to /home/cristp/GenomeAnalysis/results/assembly_quality/quast/genome_stats/genome_fraction_histogram.pdf
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2023-04-25 16:37:03
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating Icarus viewers...
+  2 of 2: Creating PDF with all tables and plots...
+Done
+
+2023-04-25 16:37:05
+RESULTS:
+  Text versions of total report are saved to /home/cristp/GenomeAnalysis/results/assembly_quality/quast/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /home/cristp/GenomeAnalysis/results/assembly_quality/quast/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /home/cristp/GenomeAnalysis/results/assembly_quality/quast/report.html
+  PDF version (tables and plots) is saved to /home/cristp/GenomeAnalysis/results/assembly_quality/quast/report.pdf
+  Icarus (contig browser) is saved to /home/cristp/GenomeAnalysis/results/assembly_quality/quast/icarus.html
+  Log is saved to /home/cristp/GenomeAnalysis/results/assembly_quality/quast/quast.log
+
+Finished: 2023-04-25 16:37:05
+Elapsed time: 0:00:13.813675
+NOTICEs: 4; WARNINGs: 0; non-fatal ERRORs: 0
+
+Thank you for using QUAST!
