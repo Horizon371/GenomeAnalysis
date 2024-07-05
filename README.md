@@ -1,4 +1,3 @@
-Paper: [RNA-seq and Tn-seq reveal fitness determinants of vancomycin-resistant Enterococcus faecium during growth in human serum](https://pubmed.ncbi.nlm.nih.gov/29162049/)
 # Project plan
 
 ## Overview
@@ -70,3 +69,5 @@ conditions.
         └── trimmed_data
 
 ```
+
+Original paper: [RNA-seq and Tn-seq reveal fitness determinants of vancomycin-resistant Enterococcus faecium during growth in human serum](https://pubmed.ncbi.nlm.nih.gov/29162049/)
